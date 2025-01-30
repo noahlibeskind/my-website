@@ -15,7 +15,11 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   }, [])
 
   if (!mounted) {
-    return <></>
+    return (
+      <div>
+        <h3>Loading...</h3>
+      </div>
+    )
   }
 
   return (
